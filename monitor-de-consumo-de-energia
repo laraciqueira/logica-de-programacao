@@ -1,0 +1,12 @@
+consumo_total = 0
+dias_acima_20 = 0
+
+for dia in range(1, 8):
+    consumo = float(input(f"Consumo do dia {dia} em kWh: "))
+    consumo_total += consumo
+
+    if consumo > 20:
+        dias_acima_20 += 1
+
+print(f"\nConsumo total da semana: {consumo_total:.2f} kWh")
+print(f"Dias com consumo acima de 20 kWh: {dias_acima_20}")

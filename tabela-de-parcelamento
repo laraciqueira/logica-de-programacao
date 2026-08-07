@@ -1,0 +1,11 @@
+valor_total = 1200.00
+
+print("=" * 36)
+print(f"TABELA DE PARCELAMENTO - COMPRA R$ {valor_total:.2f}")
+print("=" * 36)
+
+for parcelas in range(1, 11):
+    valor_parcela = valor_total / parcelas
+    print(f"{parcelas}x de R$ {valor_parcela:.2f}")
+
+print("=" * 36)
